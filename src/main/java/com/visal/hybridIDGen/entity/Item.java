@@ -5,6 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.persistence.Version;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -31,4 +32,8 @@ public class Item {
 
     @Column(name = "name", nullable = false, length = 100)
     private String name;
+
+    @Version
+    @Column(name = "version")
+    private Long version;
 }

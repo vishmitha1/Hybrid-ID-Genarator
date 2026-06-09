@@ -42,8 +42,8 @@ class HybridIDGenApplicationTests {
 
         assertThat(saved.getId())
                 .isNotNull()
-                .matches("USR-\\d{8}-\\d{5}",
-                         "ID should match USR-YYYYMMDD-NNNNN");
+                .matches("USR-\\d{8}-\\d{5}"
+                );
     }
 
     @Test
