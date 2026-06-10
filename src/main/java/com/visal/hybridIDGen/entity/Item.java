@@ -22,13 +22,13 @@ import org.hibernate.annotations.GenericGenerator;
 @AllArgsConstructor
 @Builder
 @ToString
-// @GenericGenerator(name = "custom-identity-generator", type = CustomIdentityGenerator.class)
-@GenericGenerator(name = "identity-or-assigned-generator", type = IdentityOrAssignedGenerator.class)
+ @GenericGenerator(name = "custom-identity-generator", type = CustomIdentityGenerator.class)
+//@GenericGenerator(name = "identity-or-assigned-generator", type = IdentityOrAssignedGenerator.class)
 public class Item {
 
     @Id
-    // @GeneratedValue(generator = "custom-identity-generator")
-    @GeneratedValue(generator = "identity-or-assigned-generator")
+     @GeneratedValue(generator = "custom-identity-generator")
+//    @GeneratedValue(generator = "identity-or-assigned-generator")
     @Column(name = "id")
     private Integer id;
 
