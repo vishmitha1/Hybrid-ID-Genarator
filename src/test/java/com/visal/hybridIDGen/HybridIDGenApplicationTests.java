@@ -1,6 +1,5 @@
 package com.visal.hybridIDGen;
 
-import com.visal.hybridIDGen.entity.User;
 import com.visal.hybridIDGen.repository.UserRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
